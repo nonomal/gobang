@@ -11,7 +11,7 @@ export default class Base{
         if(typeof this.events[type] == 'undefined'){
             this.events[type] = [];
         }
-        let id = Math.random().toString(16).substring(2);
+        let id = Math.random().toString(16).slice(2);
         this.events[type].push({
             id,
             type,
